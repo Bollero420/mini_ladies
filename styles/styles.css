@@ -7,6 +7,8 @@ body {
  background-color: #d4707a;
  flex-direction: row;
  display: flex;
+ margin-bottom: 20px;
+ padding: 0 5% 1px 5%;
 }
 
 #navigationMenuButton span:first-child {
@@ -39,6 +41,7 @@ body {
  flex-direction: column;
  justify-content: center;
  align-self: center;
+ visibility: hidden;
 }
 
 #navigationBar ul {
@@ -66,4 +69,83 @@ body {
  font-family: 'Capriola', sans-serif;
  font-size: 22px;
  padding: 15px;
+}
+
+#sectionBar {
+ display: flex;
+ background-color: #f5f5f5;
+ padding: 6px 15px;
+ border-radius: 4px;
+ margin-bottom: 45px;
+}
+
+#sectionBar span:first-child {
+ color: #1e5096;
+ font-size: 14px;
+ cursor: pointer;
+}
+
+#sectionBar span:first-child:hover {
+ text-decoration: underline;
+}
+
+#sectionBar span {
+ color: #777;
+ font-size: 14px;
+}
+
+#sectionBar span:not(:first-child) {
+ padding-left: 7px;
+}
+
+#ladiesBoardContainer {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+#ladiesBoardSection {
+ padding: 0 15px;
+ margin: 0 11%;
+}
+
+table {
+ align-self: center;
+ font-family: arial, sans-serif;
+ border-width: 5px;
+ border-color: #999999;
+ border-style: solid;
+ background: white;
+ width: 'auto';
+ height: 'auto';
+}
+
+th,
+td {
+ height: 60px;
+ width: 60px;
+}
+
+.oddRow th:nth-child(even),
+.evenRow td:nth-child(odd),
+.oddRow td:nth-child(even) {
+ background: black;
+}
+
+.oddRow th:nth-child(even),
+.evenRow td:nth-child(odd),
+.oddRow td:nth-child(even) {
+ background: black;
+}
+
+.greyLady {
+ height: 60px;
+ width: 60px;
+ background-image: url('../images/PieceGrey.png');
+}
+
+.redLady {
+ height: 60px;
+ width: 60px;
+ background-image: url('../images/PieceRed.png');
 }
