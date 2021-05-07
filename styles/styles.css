@@ -3,13 +3,13 @@ body {
  background-color: #cbcbcb;
 }
 
-nav {
+#navigationBar {
  background-color: #d4707a;
  flex-direction: row;
  display: flex;
 }
 
-nav button span:first-child {
+#navigationMenuButton span:first-child {
  margin-top: 0px;
 }
 
@@ -23,7 +23,7 @@ nav button span:first-child {
  align-self: center;
 }
 
-nav button {
+#navigationMenuButton {
  width: 44px;
  height: 34px;
  padding: 0;
@@ -41,19 +41,19 @@ nav button {
  align-self: center;
 }
 
-nav ul {
+#navigationBar ul {
  list-style-type: none;
  margin-left: 15px;
  display: flex;
  align-items: center;
 }
 
-nav ul li {
+#navigationBar ul li {
  align-items: center;
  justify-content: center;
 }
 
-nav li a {
+#navigationBar li a {
  display: block;
  color: white;
  text-align: center;
@@ -62,7 +62,7 @@ nav li a {
  padding: 16px 15px 16px 12px;
 }
 
-nav li:first-child a {
+#navigationBar li:first-child a {
  font-family: 'Capriola', sans-serif;
  font-size: 22px;
  padding: 15px;
