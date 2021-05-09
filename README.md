@@ -1,1 +1,3 @@
 # mini_ladies
+
+This should be a copy of https://www.minidamas.com/, and should be responsive...
