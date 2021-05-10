@@ -202,6 +202,48 @@ td {
  color: #1e5096;
 }
 
+#fakeLikeCounter {
+ border-radius: 3px;
+ width: 120px;
+ line-height: 20px;
+ background-color: white;
+ display: flex;
+ flex-direction: column;
+ border-radius: 4px;
+ border-style: solid;
+ border-color: #8d949e;
+ border-width: 1px;
+ align-items: center;
+ margin-bottom: 20px;
+}
+
+#fakeLikeCounter span {
+ padding: 1px;
+ font-size: 11px;
+}
+
+#fakeLikeCounter button i {
+ padding-right: 6px;
+}
+
+#fakeLikeCounter span {
+ border-bottom-style: solid;
+ border-bottom-color: #8d949e;
+ border-bottom-width: 1px;
+ width: 100%;
+ text-align: center;
+}
+
+#fakeLikeCounter button {
+ background-color: #4267b2;
+ color: white;
+ width: 100%;
+ text-align: center;
+ padding: 3px;
+ cursor: pointer;
+ border: none;
+}
+
 @media (max-width: 768px) {
  #navigationMenuButton {
   display: flex;
