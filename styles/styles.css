@@ -123,6 +123,13 @@ body {
  flex-direction: column;
 }
 
+#board {
+  border-width: 5px;
+  border-color: #999999;
+  border-style: solid;
+  background: white;
+}
+
 table {
  align-self: center;
  font-family: arial, sans-serif;
@@ -139,12 +146,6 @@ th,
 td {
  height: 60px;
  width: 60px;
-}
-
-.oddRow th:nth-child(even),
-.evenRow td:nth-child(odd),
-.oddRow td:nth-child(even) {
- background: black;
 }
 
 .oddRow th:nth-child(even),
@@ -258,3 +259,51 @@ td {
   display: none;
  }
 }
+
+.boardRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.rowCell {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  border-width: 2px;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.blackCell {
+  background-color: black;
+}
+
+.greyChecker {
+  background-image: url('../images/PieceGrey.png');
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ 
+ .redChecker {
+  background-image: url('../images/PieceRed.png');
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+
+ .notAllowedCell {
+  border-color: red;
+ }
+
+ .selectedCell {
+  border-color: blue;
+ }
+
+ #turnDisplay {
+  margin: 10px;
+  color: lightgreen;
+  background-color: black;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+ }

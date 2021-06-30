@@ -1,130 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Ladies</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <section id="navigationBarSection">
-      <nav id="navigationBar">
-        <button id="navigationMenuButton">
-          <span class='menuBar'></span>
-          <span class='menuBar'></span>
-          <span class='menuBar'></span>
-        </button>
-        <ul>
-          <li><a class="activeNavBar" href="/">Mini Damas</a></li>
-          <li><a class="activeNavBar" href="/">DAMAS</a></li>
-          <li><a class="activeNavBar" href="/">¿QUÉ ES?</a></li>
-        </ul>
-      </nav>
-    </section>
-    <section id="ladiesBoardSection">
-      <div id="sectionBar">
-        <span>Mini Damas</span>
-        <span>/</span>
-        <span>Portada</span>
-      </div>
 
-      <div id="ladiesBoardContainer">
-        <table>
-          <tr class="oddRow">
-            <th> </th>
-            <th><div class="greyLady"></div> </th>
-            <th> </th>
-            <th><div class="greyLady"></div> </th>
-            <th> </th>
-            <th><div class="greyLady"></div> </th>
-            <th> </th>
-            <th><div class="greyLady"></div> </th>
-          </tr>
-          <tr class="evenRow">
-            <td><div class="greyLady"></div> </td>
-            <td> </td>
-            <td><div class="greyLady"></div> </td>
-            <td> </td>
-            <td><div class="greyLady"></div> </td>
-            <td> </td>
-            <td><div class="greyLady"></div> </td>
-            <td> </td>
-          </tr>
-          <tr class="oddRow">
-            <td> </td>
-            <td><div class="greyLady"></div> </td>
-            <td> </td>
-            <td><div class="greyLady"></div> </td>
-            <td> </td>
-            <td><div class="greyLady"></div> </td>
-            <td> </td>
-            <td><div class="greyLady"></div> </td>
-          </tr>
-          <tr class="evenRow">
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-          </tr>
-          <tr class="oddRow">
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-          </tr>
-          <tr class="evenRow">
-            <td><div class="redLady"></div> </td>
-            <td> </td>
-            <td><div class="redLady"></div> </td>
-            <td> </td>
-            <td><div class="redLady"></div> </td>
-            <td> </td>
-            <td><div class="redLady"></div> </td>
-            <td> </td>
-          </tr>
-          <tr class="oddRow">
-            <td> </td>
-            <td><div class="redLady"></div> </td>
-            <td> </td>
-            <td><div class="redLady"></div> </td>
-            <td> </td>
-            <td><div class="redLady"></div> </td>
-            <td> </td>
-            <td><div class="redLady"></div> </td>
-          </tr>
-          <tr class="evenRow">
-            <td><div class="redLady"></div> </td>
-            <td> </td>
-            <td><div class="redLady"></div> </td>
-            <td> </td>
-            <td><div class="redLady"></div> </td>
-            <td> </td>
-            <td><div class="redLady"></div> </td>
-            <td> </td>
-          </tr>
-        </table>
-        <button id="newGameButton">Nueva Partida</button>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Ladies</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section id="navigationBarSection">
+    <nav id="navigationBar">
+      <button id="navigationMenuButton">
+        <span class='menuBar'></span>
+        <span class='menuBar'></span>
+        <span class='menuBar'></span>
+      </button>
+      <ul>
+        <li><a class="activeNavBar" href="/">Mini Damas</a></li>
+        <li><a class="activeNavBar" href="/">DAMAS</a></li>
+        <li><a class="activeNavBar" href="/">¿QUÉ ES?</a></li>
+      </ul>
+    </nav>
+  </section>
+  <section id="ladiesBoardSection">
+    <div id="sectionBar">
+      <span>Mini Damas</span>
+      <span>/</span>
+      <span>Portada</span>
+    </div>
+
+    <div id="ladiesBoardContainer">
+
+      <div id="board"></div>
+      <div id="turnDisplay"></div>
+      <button id="newGameButton">Nueva Partida</button>
+    </div>
+    <div id="smallLadiesDescriptionContainer">
+      <p>Las <b>damas</b> es un juego de mesa para dos personas en un tablero de
+        64 cuadros. El juego consiste en mover las fichas en diagonal sobre los
+        cuadros negros con el objetivo de comer las piezas del contrario
+        saltando sobre ellas.</p>
+      <p>Cada jugador dispone de 12 fichas de un mismo color situadas en las
+        casillas negras más próximas a éste. El objetivo del juego es capturar
+        las fichas del oponente o acorralarlas para que no puedan realizar
+        movimientos.</p>
+      <p>Si no conoces las reglas, sigue leyendo cómo se juega en <a
+          href="https://www.minidamas.com/que-son-las-damas">Reglas de las
+          damas.</a></p>
+      <div id="fakeLikeCounter">
+        <span>680</span>
+        <button><i class="fas fa-thumbs-up"></i>Me gusta</button>
       </div>
-      <div id="smallLadiesDescriptionContainer">
-        <p>Las <b>damas</b> es un juego de mesa para dos personas en un tablero de 64 cuadros. El juego consiste en mover las fichas en diagonal sobre los cuadros negros con el objetivo de comer las piezas del contrario saltando sobre ellas.</p>
-        <p>Cada jugador dispone de 12 fichas de un mismo color situadas en las casillas negras más próximas a éste. El objetivo del juego es capturar las fichas del oponente o acorralarlas para que no puedan realizar movimientos.</p>
-        <p>Si no conoces las reglas, sigue leyendo cómo se juega en <a href="https://www.minidamas.com/que-son-las-damas">Reglas de las damas.</a></p>
-        <div id="fakeLikeCounter">
-          <span>680</span>
-          <button><i class="fas fa-thumbs-up"></i>Me gusta</button>
-        </div>
-      </div>
-    </section>
-  </body>
+    </div>
+  </section>
+  <script src="app.js"></script>
+</body>
+
 </html>
